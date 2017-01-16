@@ -697,8 +697,8 @@ body {
 }
 /*custom font*/
 @font-face {
-    font-family: King-Basil-Lite;
-    src: url("../fonts/King-Basil-Lite.otf") format("opentype");
+    font-family: AmaticSC-Regular;
+    src: url("../fonts/AmaticSC-Regular.ttf") format("opentype");
 }
 @media screen and (min-width: 400px) {
     body {
@@ -784,7 +784,7 @@ h3,
 h4 {
     margin-top: 30px;
     margin-bottom: 10px;
-    font-family: "King-Basil-Lite";
+    font-family: "AmaticSC-Regular";
     font-weight: bold;
     line-height: 1.2
 }
@@ -796,7 +796,7 @@ h4 a {
 }
 h1,
 .blog-title {
-    font-family: "King-Basil-Lite";
+    font-family: "AmaticSC-Regular";
     font-size: 4.3rem;
     font-weight: 500;
     letter-spacing: -2px
