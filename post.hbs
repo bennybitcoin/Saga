@@ -3,9 +3,11 @@
 <header id="header" class="animated fadeIn"{{#if image}} style="background-image: url({{image}})"{{/if}}>
     <div class="header-background">
     <section class="blog-content">
-        <a id="site-url" class="blog-title" href="{{@blog.url}}">{{@blog.title}}</a>
+        <a id="site-url" class="blog-title" href="{{@blog.url}}" style="font-size: 4rem;">{{@blog.title}}</a>
         <span class="blog-description">{{@blog.description}}</span>
-        {{> links}}
+        <div style="top: 80px;">
+            {{> links}}
+        <div>
     </section>
     <section class="header-content">
         <h1 class="post-title animated fadeInUp">{{{title}}}</h1>
@@ -19,6 +21,26 @@
         <section class="post-content">
             {{content}}
         </section>
+
+        <div id="disqus_thread"></div>
+        <script>
+
+                
+        var disqus_config = function () {
+            this.page.url = '{{url absolute=true}}';
+            this.page.identifier = 'ghost-{{id}}';
+        };
+        
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://lifestylelily.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                
+
     </article>
 </main>
 {{~/post}}
