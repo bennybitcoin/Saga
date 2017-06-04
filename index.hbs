@@ -1,15 +1,22 @@
 {{!< default}}
 <header id="header">
     <div class="header-background">
-    <section class="blog-content animated fadeIn">
-        <a id="site-url" class="blog-title" style="font-weight: 500; font-size: x-large;;" href="{{@blog.url}}">{{@blog.title}}</a>
-        <a class="blog-title" style="font-weight: 500; font-size: 15px" href="/tag/music">Music</a>
-        <a class="blog-title" style="font-weight: 500; font-size: 15px" href="/tag/travel">Travel</a>
-        <a class="blog-title" style="font-weight: 500; font-size: 15px" href="/tag/lifestyle">Style</a>
-        <a class="blog-title" style="font-weight: 500; font-size: 15px" href="/tag/career">Career</a>
-        <span class="blog-description">{{@blog.description}}</span>
-        {{> links}}
-    </section>
+        <section class="blog-content animated fadeIn">
+            <div style="height: 60px;">
+                <h1 class="blog-title" style="margin: 10px 0 0 0">
+                    <a id="site-url" class="blog-title" style="font-weight: 500; font-size: 69px; text-shadow: -2px 0 white, 0 2px white;" href="{{@blog.url}}">{{@blog.title}}</a>
+                </h1>
+                {{> links}}
+            </div>
+            <div style="text-align: center">
+                <a class="blog-title" style="font-weight: 500; font-size: 24px" href="/tag/music">Music</a>
+                <a class="blog-title" style="font-weight: 500; font-size: 24px" href="/tag/travel">Travel</a>
+                <a class="blog-title" style="font-weight: 500; font-size: 24px" href="/tag/lifestyle">Style</a>
+                <a class="blog-title" style="font-weight: 500; font-size: 24px" href="/tag/career">Career</a>
+            <div>
+            
+            
+        </section>
     </div>
 </header>
 <main id="main" class="archive">

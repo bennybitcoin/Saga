@@ -15,6 +15,7 @@ h1, .blog-title {
     @include font-size(35);
     //font-weight: 300;
     letter-spacing: -2px;
+    text-align: center;
 }
 h2 {
     @include font-size(35);
