@@ -290,7 +290,10 @@ body {
     overflow: hidden;
     background-color: #333;
     background-size: cover;
-    background-position: center
+    background-position: center;
+    height: 120px;
+    position: relative;
+    background: #efd5d4
 }
 #header .header-background {
     display: -webkit-box;
