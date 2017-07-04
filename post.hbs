@@ -1,23 +1,34 @@
 {{!< default}}
 {{#post ~}}
-<header id="header" class="animated fadeIn"{{#if image}} style="background-image: url({{image}})"{{/if}}>
+<header id="header">
     <div class="header-background">
-    <section class="blog-content">
-        <a id="site-url" class="blog-title" href="{{@blog.url}}" style="font-size: 4rem;">{{@blog.title}}</a>
-        <span class="blog-description">{{@blog.description}}</span>
-        <div style="top: 40px; position: relative;">
-            {{> links}}
-        <div>
-    </section>
-    <section class="header-content">
+        <section class="blog-content animated fadeIn">
+            <div style="height: 60px;">
+                <h1 class="blog-title" style="margin: 10px 0 0 0">
+                    <a id="site-url" class="blog-title" style="font-weight: 500; font-size: 69px; text-shadow: -2px 0 white, 0 2px white;" href="{{@blog.url}}">{{@blog.title}}</a>
+                </h1>
+                {{> links}}
+            </div>
+            <div style="text-align: center">
+                <a class="blog-title" style="font-weight: 500; font-size: 24px" href="/tag/music">Music</a>
+                <a class="blog-title" style="font-weight: 500; font-size: 24px" href="/tag/travel">Travel</a>
+                <a class="blog-title" style="font-weight: 500; font-size: 24px" href="/tag/lifestyle">Style</a>
+                <a class="blog-title" style="font-weight: 500; font-size: 24px" href="/tag/career">Career</a>
+            <div>
+        </section>
+
+    
+    </div>
+</header>
+
+
+<main id="main" class="content">
+    <article itemtype="http://schema.org/BlogPosting" class="animated fadeIn content post {{post_class}}">
+        <section class="header-content">
         <h1 class="post-title animated fadeInUp">{{{title}}}</h1>
         <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="{{date format='X'}}" datetime="{{date format='YYYY-MM-DDTHH:mm'}}" title="{{date format='DD MMMM YYYY'}}">{{date published_at timeago='true'}}</time></span>
             {{#if tags}}<span class="tags animated fadeInUp"><i class="fa fa-tags"></i> {{tags prefix="" separator=", "}}</span>{{/if}}
     </section>
-    </div>
-</header>
-<main id="main" class="content">
-    <article itemtype="http://schema.org/BlogPosting" class="animated fadeIn content post {{post_class}}">
         <section class="post-content">
             {{content}}
         </section>
