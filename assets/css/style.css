@@ -466,11 +466,12 @@ body {
 .post-template #header .blog-content .blog-title,
 .tag-template #header .blog-content .blog-title,
 .author-template #header .blog-content .blog-title {
+    font-size: 2.6rem;
     font-size: 14px;
-    font-size: 2.2rem;
     font-weight: 500;
     letter-spacing: 0;
-    margin: 0
+    margin: 20px 4vw;
+    color: #545354
 }
 .post-template #header .blog-content .blog-description,
 .tag-template #header .blog-content .blog-description,
