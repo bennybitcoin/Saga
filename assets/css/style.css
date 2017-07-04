@@ -291,9 +291,6 @@ body {
     background-color: #333;
     background-size: cover;
     background-position: center;
-    height: 120px;
-    position: relative;
-    background: #efd5d4
 }
 #header .header-background {
     display: -webkit-box;
@@ -451,7 +448,10 @@ body {
 .post-template #header,
 .tag-template #header,
 .author-template #header {
-    position: relative
+    position: relative;
+    height: 120px;
+    position: relative;
+    background: #efd5d4
 }
 .post-template #header .blog-content,
 .tag-template #header .blog-content,
