@@ -24,12 +24,14 @@
             this.stickyFooter();
             this.initializeFeed();
             this.initializePostNavigation();
+            this.highlightTag();
         },
 
         highlightTag: function(){
             $('.blog-title').each(function(){
                if($('a blog-title').text = {{tag.name}}){ 
                     $(this).css('font-size', '25px;');
+                    $(this).css('color', 'white;');
                 }
             });
         }
