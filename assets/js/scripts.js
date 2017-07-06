@@ -26,6 +26,14 @@
             this.initializePostNavigation();
         },
 
+        highlightTag: function(){
+            $('.blog-title').each(function(){
+               if($('a blog-title').text = {{tag.name}}){ 
+                    $(this).css('font-size', '25px;');
+                }
+            });
+        }
+
         highlightCode: function(){
             if($('code').length === 0){
                 return;

@@ -24,7 +24,7 @@
 
 <main id="main" class="content">
     <article itemtype="http://schema.org/BlogPosting" class="animated fadeIn content post {{post_class}}">
-        <section class="header-content">
+        <section class="header-content" style="padding-bottom: 35px;">
         <h1 class="post-title animated fadeInUp">{{{title}}}</h1>
         <span class="post-data"><span class="date animated fadeInUp"><i class="fa fa-clock-o"></i> <time class="timesince date" data-timesince="{{date format='X'}}" datetime="{{date format='YYYY-MM-DDTHH:mm'}}" title="{{date format='DD MMMM YYYY'}}">{{date published_at timeago='true'}}</time></span>
             {{#if tags}}<span class="tags animated fadeInUp"><i class="fa fa-tags"></i> {{tags prefix="" separator=", "}}</span>{{/if}}
