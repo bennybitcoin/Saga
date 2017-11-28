@@ -396,7 +396,7 @@ body {
 .archive-template #header {
     height: 120px;
     position: relative;
-    background: #efd5d4
+    background: rgba(217, 240, 253, 1);
 }
 .home-template #header .header-background,
 .archive-template #header .header-background {
@@ -527,7 +527,7 @@ body {
     font-size: 1.4rem;
     text-decoration: none;
     border: 0;
-    font: "AmaticSC-Regular";
+    font: "Sail-Regular";
 }
 #main #feed #loadmore a:hover {
     text-decoration: none;
@@ -536,7 +536,9 @@ body {
 }
 #main.archive {
     overflow: hidden;
-    background: #f2f2f2
+    background: #f2f2f2;
+    width: 44%;
+    left: 18%;
 }
 #main.archive .post {
     float: left;
@@ -708,6 +710,10 @@ body {
     font-family: AmaticSC-Regular;
     src: url("../fonts/AmaticSC-Regular.ttf") format("opentype");
 }
+@font-face {
+    font-family: Sail-Regular;
+    src: url("../fonts/Sail-Regular.ttf") format("opentype");
+}
 @media screen and (min-width: 400px) {
     body {
         font-size: 18px;
@@ -780,7 +786,8 @@ body {
         font-size: 5.5rem
     }
     #main.archive .post {
-        width: calc( ( 100% - (20px * 3)) / 4)
+        width: 100%
+        /*calc( ( 100% - (20px * 3)) / 4)*/
     }
     #main.archive .post.featured {
         width: calc( ( 100% - (20px * 3)) / 2 + 20px)
@@ -792,7 +799,7 @@ h3,
 h4 {
     margin-top: 30px;
     margin-bottom: 10px;
-    font-family: "AmaticSC-Regular";
+    font-family: "Sail-Regular";
     font-weight: bold;
     line-height: 1.2
 }
@@ -804,7 +811,7 @@ h4 a {
 }
 h1,
 .blog-title {
-    font-family: "AmaticSC-Regular";
+    font-family: "Sail-Regular";
     font-size: 4.3rem;
     font-weight: 500;
     letter-spacing: -2px
