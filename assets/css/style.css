@@ -508,7 +508,9 @@ body {
 }
 #main #feed {
     position: relative;
-    padding-bottom: 40px
+    padding-bottom: 40px;
+    width: 44%;
+    left: 18%;
 }
 #main #feed #loadmore {
     position: absolute;
@@ -537,8 +539,6 @@ body {
 #main.archive {
     overflow: hidden;
     background: #f2f2f2;
-    width: 44%;
-    left: 18%;
 }
 #main.archive .post {
     float: left;
