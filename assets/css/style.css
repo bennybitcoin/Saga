@@ -415,6 +415,8 @@ body {
 .home-template #header .blog-content a,
 .archive-template #header .blog-content a {
     color: #545354;
+    margin: 10px;
+    text-decoration: none;
 }
 .home-template #header .blog-content a:hover,
 .archive-template #header .blog-content a:hover {

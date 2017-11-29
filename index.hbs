@@ -2,14 +2,14 @@
 <header id="header">
     <div class="header-background">
         <section class="blog-content animated fadeIn">
-            <div style="height: 60px;">
-                <h1 class="blog-title" style="margin: 50px 0 0 0">
+            <div style="height: 64px;">
+                <h1 class="blog-title" style="margin: 60px 0 0 0">
 
-                  <img alt="" data-type="image" style="width: 210px; height: 40px; object-fit: cover; display: contents; top: -9px; left: 70vw;" href="{{@blog.url}}" src="/assets/images/blog_title.png">
+                  <img alt="" data-type="image" style="width: 210px; height: 60px; object-fit: cover; margin: auto" href="{{@blog.url}}" src="/assets/images/blog_title.png">
                 </h1>
 
             </div>
-            {{> links}}
+
             <div style="left: 20%; width: 60%; position: relative">
               <div style="text-align: center; border-bottom: 1px dashed rgba(28, 138, 67, 1); border-top: 1px dashed rgba(28, 138, 67, 1);">
                   <a style="font-weight: 500; font-size: 14px" href="{{@blog.url}}">HOME</a>
@@ -24,6 +24,7 @@
     </div>
 </header>
 <main id="main" class="archive">
+    {{> links}}
     {{>loop}}
     <div style="position: absolute; left: 64%; width: 34%">
         <!-- LightWidget WIDGET -->
