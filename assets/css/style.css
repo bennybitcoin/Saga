@@ -394,7 +394,7 @@ body {
 }
 .home-template #header,
 .archive-template #header {
-    height: 212px;
+    height: 151px;
     position: relative;
     background: rgba(217, 240, 253, 1);
 }
@@ -415,7 +415,7 @@ body {
 .home-template #header .blog-content a,
 .archive-template #header .blog-content a {
     color: #545354;
-    margin: 10px;
+    margin: 21px;
     text-decoration: none;
 }
 .home-template #header .blog-content a:hover,
