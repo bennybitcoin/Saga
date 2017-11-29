@@ -394,7 +394,7 @@ body {
 }
 .home-template #header,
 .archive-template #header {
-    height: 252px;
+    height: 212px;
     position: relative;
     background: rgba(217, 240, 253, 1);
 }
@@ -429,7 +429,6 @@ body {
 }
 .home-template #header .blog-content .blog-title:hover,
 .archive-template #header .blog-content .blog-title:hover {
-    font-size: 3.2rem;
     color: #545354;
 }
 .home-template #header .blog-content nav.links ul li a,
