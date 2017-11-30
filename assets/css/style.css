@@ -510,6 +510,7 @@ body {
 #main #feed {
     position: relative;
     padding-bottom: 40px;
+    width: 81vw;
 }
 #main #feed #loadmore {
     position: absolute;
