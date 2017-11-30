@@ -539,7 +539,7 @@ body {
 }
 #main.archive {
     overflow: hidden;
-    background: #f2f2f2;
+    background: #fff;
 }
 #main.archive .post {
     float: left;
